@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background: url("images/heartbg.png") center/cover no-repeat;
+  overflow: hidden;
+}
+
+.invitation-container {
+  position: relative;
+  padding: 10px; /* Adjusted padding for better visual appearance */
+}
+
+.confirmation-box {
+  text-align: center;
+}
+
+.valentine-text {
+  color: rgb(254, 50, 50);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600; /* SemiBold font weight */
+  font-size: 4vw; /* Adjusted font size for mobile */
+  margin-bottom: 10px; /* Adjusted margin for space */
+  letter-spacing: -2px; /* Add letter-spacing for character spacing */
+}
+
+.button {
+  margin: 10 10px;
+  padding: 8px 20px; /* Adjusted padding for better mobile appearance */
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1vw; /* Adjusted font size for mobile */
+  font-weight: bold;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.green {
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #4caf50;
+}
+
+.red {
+  background-color: #a5a5a5;
+}
+
+.green:hover {
+  background-color: #39863d;
+}
+
+.red:hover {
+  background-color: #cc0000;
+}
+
+/* Heart shape styling */
+body::before {
+  content: url("images/custom_heart.png");
+  position: absolute;
+  animation: hearts 4s linear infinite;
+}
+
+/* Randomly position hearts */
+@keyframes hearts {
+  0% {
+    transform: translate(0, 0) scale(0.4);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, -200px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.heart {
+  position: absolute;
+  width: 30px;
+  height: 26px;
+  background: url("images/custom_heart.png") center/cover no-repeat;
+  animation: fadeOut 1s ease-in-out;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Mobile responsiveness for iPhone 14 */
+@media only screen and (max-device-width: 428px) {
+  .valentine-text {
+    font-size: 10vw;
+    font-weight: 600; /* SemiBold font weight */
+    margin-bottom: 14px;
+  }
+
+  .button {
+    padding: 6px 15px;
+    font-size: 3.5vw;
+  }
+
+  .red {
+    background-color: #a5a5a5;
+  }
+}

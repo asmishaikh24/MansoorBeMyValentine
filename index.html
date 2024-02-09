@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Invitation</title>
+  <style>
+    /* Hide the audio display */
+    audio {
+      width: 0;
+      height: 0;
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="invitation-container">
+    <div class="confirmation-box">
+      <div class="valentine-text">
+        <strong>Will you be my valentine?</strong>
+      </div>
+      <button class="button green" id="yesButton" onclick="redirectToLovePage()">Yes</button>
+      <button class="button red" onclick="updateText()">No</button>
+    </div>
+  </div>
+</body>
+</html>

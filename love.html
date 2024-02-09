@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Montserrat', sans-serif;
+            background: url('images/heartbg.png') center/cover no-repeat;
+            overflow: hidden;
+            opacity: 10; /* Adjust opacity value as needed */
+        }
+
+        .love-page-container {
+            text-align: center;
+            display: flex; /* Align items in a row */
+            align-items: center; /* Center items vertically */
+            flex-direction: column; /* Stack items vertically */
+        }
+
+        .love-message-container {
+            display: flex; /* Align items in a row */
+            align-items: center; /* Center items vertically */
+            margin-bottom: -70px; /* Increase spacing between love message and kiss message */
+        }
+
+        .love-message {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+            font-size: 5vw;
+            color: #5a0d0d;
+            animation: scaleAnimation 1.5s ease-in-out infinite alternate;
+            margin-right: 80px; /* Add some space between love message and GIF */
+        }
+
+        .kiss-message {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+            font-size: 4vw; /* Adjust size */
+            color: #ff8888;
+            margin-right: 325px; /* Adjust margin-left to move the message more to the left */
+        }
+
+        .gif-container {
+            margin-top: 20px; /* Adjust margin top of the GIF */
+        }
+
+        @keyframes scaleAnimation {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+    <title>Love Page</title>
+</head>
+<body>
+    <div class="love-page-container">
+        <div class="love-message-container">
+            <div class="love-message">Kiss me right now!!!</div>
+            <!-- Add your GIF here -->
+            <div class="gif-container"><img src="bear-kiss-bear-kisses.gif" alt="GIF"></div>
+        </div>
+        <div class="kiss-message">I love you</div>
+    </div>
+
+    <!-- Update the source with the correct path to your audio file -->
+    <audio autoplay volume="0.01">
+        <source src="tum_mile (1).mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+    
+</body>
+</html>
